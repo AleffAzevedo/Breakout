@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Breakout Game</title>
+    <style>
+        canvas {
+            border: 1px solid #000;
+            display: block;
+            margin: 0 ;
+        }
+
+        #gameOverText {
+            display: none;
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 200px;
+        }
+
+        #restartButton {
+            display: none;
+            margin: 10px ;
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            background-color: #0095DD;
+            color: #FFF;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="gameCanvas" width="500" height="500"></canvas>
+    <div id="gameOverText">Game Over</div>
+    <button id="restartButton">Reiniciar</button>
+
+    <script src="game.js"></script>
+</body>
+</html>
